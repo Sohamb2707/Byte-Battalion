@@ -1,0 +1,344 @@
+Microsoft Windows [Version 10.0.19045.5011]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\SOHAM BABSHETYE>git --version
+git version 2.46.0.windows.1
+
+C:\Users\SOHAM BABSHETYE>git config --global user.name "Soham"
+
+C:\Users\SOHAM BABSHETYE>git config --global user.email "sbabshetye@gmail.com"
+
+C:\Users\SOHAM BABSHETYE>git config --global user.email
+sbabshetye@gmail.com
+
+C:\Users\SOHAM BABSHETYE>git config --global user.name
+Soham
+
+C:\Users\SOHAM BABSHETYE>git config --global --edit
+
+C:\Users\SOHAM BABSHETYE>mkdir LetsLearnGit
+
+C:\Users\SOHAM BABSHETYE>cd LetsLearnGit
+
+C:\Users\SOHAM BABSHETYE\LetsLearnGit>git init
+Initialized empty Git repository in C:/Users/SOHAM BABSHETYE/LetsLearnGit/.git/
+
+C:\Users\SOHAM BABSHETYE\LetsLearnGit>ls
+
+C:\Users\SOHAM BABSHETYE\LetsLearnGit>ls -a
+.  ..  .git
+
+C:\Users\SOHAM BABSHETYE\LetsLearnGit>git status
+On branch main
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Sum.java
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\Users\SOHAM BABSHETYE\LetsLearnGit>git add Sum.java
+
+C:\Users\SOHAM BABSHETYE\LetsLearnGit>git status
+On branch main
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   Sum.java
+
+
+C:\Users\SOHAM BABSHETYE\LetsLearnGit>git commit -m "Initial Commit"
+[main (root-commit) 562aa21] Initial Commit
+ 1 file changed, 7 insertions(+)
+ create mode 100644 Sum.java
+
+C:\Users\SOHAM BABSHETYE\LetsLearnGit>git log
+commit 562aa2158b8605732d1e5f4d2a7d7990bbc698a0 (HEAD -> main)
+Author: Soham <sbabshetye@gmail.com>
+Date:   Sun Oct 20 22:19:21 2024 +0530
+
+    Initial Commit
+
+C:\Users\SOHAM BABSHETYE\LetsLearnGit>git status
+On branch main
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   Sum.java
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+C:\Users\SOHAM BABSHETYE\LetsLearnGit>git status
+On branch main
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   Sum.java
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Div.java
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+C:\Users\SOHAM BABSHETYE\LetsLearnGit>git add Div.java
+
+C:\Users\SOHAM BABSHETYE\LetsLearnGit>git status
+On branch main
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   Div.java
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   Sum.java
+
+
+C:\Users\SOHAM BABSHETYE\LetsLearnGit>git commit -m "Adding div"
+[main 54d788e] Adding div
+ 1 file changed, 3 insertions(+)
+ create mode 100644 Div.java
+
+C:\Users\SOHAM BABSHETYE\LetsLearnGit>git log
+commit 54d788e1c566fdab8f35bbf16161c9b27414d3c3 (HEAD -> main)
+Author: Soham <sbabshetye@gmail.com>
+Date:   Sun Oct 20 22:22:30 2024 +0530
+
+    Adding div
+
+commit 562aa2158b8605732d1e5f4d2a7d7990bbc698a0
+Author: Soham <sbabshetye@gmail.com>
+Date:   Sun Oct 20 22:19:21 2024 +0530
+
+    Initial Commit
+
+C:\Users\SOHAM BABSHETYE\LetsLearnGit>git status
+On branch main
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   Sum.java
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+C:\Users\SOHAM BABSHETYE\LetsLearnGit>git add Sum.java
+
+C:\Users\SOHAM BABSHETYE\LetsLearnGit>git status
+On branch main
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   Sum.java
+
+
+C:\Users\SOHAM BABSHETYE\LetsLearnGit>git commit -m "Added Sum.java"
+[main 48b66ed] Added Sum.java
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+C:\Users\SOHAM BABSHETYE\LetsLearnGit>git log
+commit 48b66ed310b025074fc8010d3e765bc753121d34 (HEAD -> main)
+Author: Soham <sbabshetye@gmail.com>
+Date:   Sun Oct 20 22:23:44 2024 +0530
+
+    Added Sum.java
+
+commit 54d788e1c566fdab8f35bbf16161c9b27414d3c3
+Author: Soham <sbabshetye@gmail.com>
+Date:   Sun Oct 20 22:22:30 2024 +0530
+
+    Adding div
+
+commit 562aa2158b8605732d1e5f4d2a7d7990bbc698a0
+Author: Soham <sbabshetye@gmail.com>
+Date:   Sun Oct 20 22:19:21 2024 +0530
+
+    Initial Commit
+
+C:\Users\SOHAM BABSHETYE\LetsLearnGit>git checkout 562aa2158b8605732d1e5f4d2a7d7990bbc698a0
+Note: switching to '562aa2158b8605732d1e5f4d2a7d7990bbc698a0'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at 562aa21 Initial Commit
+
+C:\Users\SOHAM BABSHETYE\LetsLearnGit>git checkout master
+error: pathspec 'master' did not match any file(s) known to git
+
+C:\Users\SOHAM BABSHETYE\LetsLearnGit>git checkout main
+Previous HEAD position was 562aa21 Initial Commit
+Switched to branch 'main'
+
+C:\Users\SOHAM BABSHETYE\LetsLearnGit>git checkout 562aa2158b8605732d1e5f4d2a7d7990bbc698a0
+Note: switching to '562aa2158b8605732d1e5f4d2a7d7990bbc698a0'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at 562aa21 Initial Commit
+
+C:\Users\SOHAM BABSHETYE\LetsLearnGit>gti branch
+'gti' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\SOHAM BABSHETYE\LetsLearnGit>git branch
+* (HEAD detached at 562aa21)
+  main
+
+C:\Users\SOHAM BABSHETYE\LetsLearnGit>git checkout main
+Previous HEAD position was 562aa21 Initial Commit
+Switched to branch 'main'
+
+C:\Users\SOHAM BABSHETYE\LetsLearnGit>git branch
+* main
+
+C:\Users\SOHAM BABSHETYE\LetsLearnGit>git log
+commit 48b66ed310b025074fc8010d3e765bc753121d34 (HEAD -> main)
+Author: Soham <sbabshetye@gmail.com>
+Date:   Sun Oct 20 22:23:44 2024 +0530
+
+    Added Sum.java
+
+commit 54d788e1c566fdab8f35bbf16161c9b27414d3c3
+Author: Soham <sbabshetye@gmail.com>
+Date:   Sun Oct 20 22:22:30 2024 +0530
+
+    Adding div
+
+commit 562aa2158b8605732d1e5f4d2a7d7990bbc698a0
+Author: Soham <sbabshetye@gmail.com>
+Date:   Sun Oct 20 22:19:21 2024 +0530
+
+    Initial Commit
+
+C:\Users\SOHAM BABSHETYE\LetsLearnGit>git status
+On branch main
+nothing to commit, working tree clean
+
+C:\Users\SOHAM BABSHETYE\LetsLearnGit>git branch dev
+
+C:\Users\SOHAM BABSHETYE\LetsLearnGit>git branch
+  dev
+* main
+
+C:\Users\SOHAM BABSHETYE\LetsLearnGit>git checkout dev
+Switched to branch 'dev'
+
+C:\Users\SOHAM BABSHETYE\LetsLearnGit>git status
+On branch dev
+nothing to commit, working tree clean
+
+C:\Users\SOHAM BABSHETYE\LetsLearnGit>git status
+On branch dev
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Sub.java
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\Users\SOHAM BABSHETYE\LetsLearnGit>git checkout dev
+Already on 'dev'
+
+C:\Users\SOHAM BABSHETYE\LetsLearnGit>git add Multiply.java
+fatal: pathspec 'Multiply.java' did not match any files
+
+C:\Users\SOHAM BABSHETYE\LetsLearnGit>git add Sub.java
+
+C:\Users\SOHAM BABSHETYE\LetsLearnGit>git commit -m "Added Sub"
+[dev 6779d05] Added Sub
+ 1 file changed, 7 insertions(+)
+ create mode 100644 Sub.java
+
+C:\Users\SOHAM BABSHETYE\LetsLearnGit>git merge main
+Already up to date.
+
+C:\Users\SOHAM BABSHETYE\LetsLearnGit>git branch soham
+
+C:\Users\SOHAM BABSHETYE\LetsLearnGit>git branch
+* dev
+  main
+  soham
+
+C:\Users\SOHAM BABSHETYE\LetsLearnGit>git checkout soham
+Switched to branch 'soham'
+
+C:\Users\SOHAM BABSHETYE\LetsLearnGit>git merge dev
+Already up to date.
+
+C:\Users\SOHAM BABSHETYE\LetsLearnGit>git add Multiply.java
+
+C:\Users\SOHAM BABSHETYE\LetsLearnGit>git commit -m "Added Multiply.java"
+[soham cae1713] Added Multiply.java
+ 1 file changed, 7 insertions(+)
+ create mode 100644 Multiply.java
+
+C:\Users\SOHAM BABSHETYE\LetsLearnGit>git checkout dev
+Switched to branch 'dev'
+
+C:\Users\SOHAM BABSHETYE\LetsLearnGit>git merge soham
+Updating 6779d05..cae1713
+Fast-forward
+ Multiply.java | 7 +++++++
+ 1 file changed, 7 insertions(+)
+ create mode 100644 Multiply.java
+
+C:\Users\SOHAM BABSHETYE\LetsLearnGit>git log
+commit cae17134192238387a61d64d3f599c029ad9d0fa (HEAD -> dev, soham)
+Author: Soham <sbabshetye@gmail.com>
+Date:   Sun Oct 20 22:34:35 2024 +0530
+
+    Added Multiply.java
+
+commit 6779d05eff130feef578d6b2e18b838afad928c8
+Author: Soham <sbabshetye@gmail.com>
+Date:   Sun Oct 20 22:31:05 2024 +0530
+
+    Added Sub
+
+commit 48b66ed310b025074fc8010d3e765bc753121d34 (main)
+Author: Soham <sbabshetye@gmail.com>
+Date:   Sun Oct 20 22:23:44 2024 +0530
+
+    Added Sum.java
+
+commit 54d788e1c566fdab8f35bbf16161c9b27414d3c3
+Author: Soham <sbabshetye@gmail.com>
+Date:   Sun Oct 20 22:22:30 2024 +0530
+
+    Adding div
+
+commit 562aa2158b8605732d1e5f4d2a7d7990bbc698a0
+Author: Soham <sbabshetye@gmail.com>
+Date:   Sun Oct 20 22:19:21 2024 +0530
+
+    Initial Commit
+
+C:\Users\SOHAM BABSHETYE\LetsLearnGit>
