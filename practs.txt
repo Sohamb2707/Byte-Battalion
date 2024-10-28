@@ -1,0 +1,37 @@
+
+ec2- elastic compute service
+u can select OStype, no of CPUs(compute power), network speed, storage, rules to specify traffic, 
+steps....
+EC2- - -running instances- - -launch instances- - -create a new instance- - -connect instance- - -sudo su- - -yum update- - -python3
+
+S3- - -create bucket- - -name the bucket- - create- - -upload(click on bucket name)- - -add file- - -(java)- - -upload
+
+
+Great! Since you’re connected to your EC2 instance, here are the steps to set up your instance for running Java, Python, or C programs.
+
+Step 1:
+sudo apt update && sudo apt upgrade -y
+Step 2: 
+sudo apt install openjdk-11-jdk -y
+java -version
+
+nano YourProgram.java
+
+javac YourProgram.java
+
+java YourProgram
+
+
+
+
+
+[ec2-user@ip-172-31-11-128 ~]$ touch Factorial.java
+[ec2-user@ip-172-31-11-128 ~]$ nano Factorial.java
+[ec2-user@ip-172-31-11-128 ~]$ cat Factorial.java
+
+sudo dnf install java-11-amazon-corretto-devel -y
+sudo dnf install java-11-amazon-corretto -y
+sudo yum update -y
+
+
+ 
